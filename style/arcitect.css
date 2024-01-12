@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
 }
-.btn-primary{
+
+.btn-primary {
     color: #FFF;
     text-align: center;
     font-size: 1.2rem;
@@ -17,132 +19,214 @@
     cursor: pointer;
 
 }
+
 /* header style */
-header{
+header {
     background-color: rgba(255, 144, 14, 0.10);
 }
-nav{
-    display:flex;
+
+nav {
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.nav-title{
+
+.nav-title {
     color: #131313;
     font-size: 3rem;
     font-weight: 700;
 }
-nav > ul{
+
+nav>ul {
     display: flex;
 }
-nav li{
+
+nav li {
     list-style: none;
     margin: 0 30px;
     font-size: 1rem;
     font-weight: 500;
 
 }
-nav a{
+
+nav a {
     text-decoration: none;
     color: #424242;
 }
+
 /* banner style */
-.banner{
+.banner {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
 }
-.banner-content{
-     width: 60%; 
+
+.banner-content {
+    width: 60%;
     margin: 150px auto 0;
     text-align: center;
 }
-.banner-title{
-color: #131313;
-font-size: 4rem;
-font-weight: 700;
-margin-bottom: 34px;
+
+.banner-title {
+    color: #131313;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 34px;
 }
-.banner-description{
- color: #727272;
- font-size: 1rem;
- font-weight: 400; 
- margin-bottom: 34px;  
+
+.banner-description {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 34px;
 }
-.banner-image{
-   width: 80%;
-   /* align-items: center; */
-   margin: 50px auto;
+
+.banner-image {
+    width: 80%;
+    /* align-items: center; */
+    margin: 50px auto;
 }
-.banner-image img{
+
+.banner-image img {
     width: 100%;
 }
+
 /* header style end */
 /* main style */
- main{
-     width: 80%;
-     max-width: 1440px;
-     margin: 0 auto;
- }
- .team-features{
+main {
+    width: 80%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.team-features {
     display: flex;
     align-items: center;
- }
- .team-image{
+}
+
+.team-image {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
- }
- .about-team{
-    padding:0 4rem;
- }
-.team-title{
+}
+
+.about-team {
+    padding: 0 4rem;
+}
+
+.team-title {
     font-size: 2.8rem;
     font-weight: 700;
-    max-width: 380px; 
+    max-width: 380px;
 }
-.team-title .text-1{
+
+.team-title .text-1 {
     color: #727272;
     font-weight: 500;
 }
-.team-title .text-2{
+
+.team-title .text-2 {
     color: #131313;
 }
-.team-title .text-3{
+
+.team-title .text-3 {
     color: #FF900E;
 }
-.team-description{
+
+.team-description {
     color: #727272;
     font-size: 1rem;
     margin: 1.2rem 0;
     max-width: 537px;
 }
+
+/*end team featurer style */
+.fact {
+    margin: 30px 0;
+}
+
+.fact-title {
+    color: #131313;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.fact-description {
+    max-width: 480px;
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 24px 0;
+}
+.fact-card-container{
+    display: flex;
+    justify-content: space-around;
+}
+.fact-card-container .fact-card{
+    border: 1px solid #FF900E;
+    text-align: center;
+    width: 25%;
+    margin: 45px;
+    border-radius: 8px;
+}
+.card-image,.card-numeric{
+    margin: 10px;
+}
+.card-numeric{
+    color: #424242;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+.card-name{
+    color: #727272;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+
+
+
 /* style for smaller divice */
 
 @media screen and (max-width : 576px) {
-    nav{
+    nav {
         flex-direction: column;
         align-content: flex-start;
     }
+
     nav li {
         margin: 0 12px;
     }
+
     .banner {
         align-content: flex-start;
         align-items: center;
     }
+
     .banner-content {
         margin: 20px 30px;
     }
+
     .banner-title {
         font-size: 2.5rem;
     }
-    .team-features{
+
+    .team-features {
         flex-direction: column-reverse;
         gap: 15px;
     }
-    .team-image{
-            grid-template-columns: repeat(1, 1fr);
+
+    .team-image {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .about-team{
+
+    .about-team {
         padding: 10px;
+    }
+    .fact-card-container{
+        flex-direction: column
+    }
+    .fact-card-container .fact-card{
+        width: 75%;
     }
 }
