@@ -69,9 +69,70 @@ margin-bottom: 34px;
 }
 .banner-image{
    width: 80%;
-   align-items: center;
+   /* align-items: center; */
    margin: 50px auto;
 }
 .banner-image img{
     width: 100%;
+}
+/* header style end */
+/* main style */
+ main{
+     width: 80%;
+    max-width: 1440px;
+    margin: 0 auto;
+ }
+ .team-features{
+    display: flex;
+    align-items: center;
+ }
+ .team-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+ }
+ .about-team{
+    padding:0 4rem;
+ }
+.team-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    max-width: 380px; 
+}
+.team-title .text-1{
+    color: #727272;
+    font-weight: 500;
+}
+.team-title .text-2{
+    color: #131313;
+}
+.team-title .text-3{
+    color: #FF900E;
+}
+.team-description{
+    color: #727272;
+    font-size: 1rem;
+    margin: 1.2rem 0;
+    max-width: 537px;
+}
+/* style for smaller divice */
+
+@media screen and (max-width : 576px) {
+    nav{
+        flex-direction: column;align-items: flex-start;
+        align-content: flex-start;
+    }
+    nav li {
+        margin: 0 12px;
+    }
+    .banner {
+        align-content: flex-start;
+        align-items: center;
+    }
+    .banner-content {
+        margin: 20px 30px;
+    }
+    .banner-title {
+        font-size: 2.5rem;
+    }
 }
